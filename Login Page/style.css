@@ -15,6 +15,9 @@ body {
     background: linear-gradient(90deg, #e2e2e2, #c9d6ff)
 }
 
+
+
+
 .container {
     position: relative;
     width: 850px;
@@ -115,6 +118,7 @@ form {
     font-weight: 600;
 }
 
+
 .container p {
     font-size: 14.5%;
     margin: 15px 0;
@@ -203,6 +207,16 @@ form {
     background: transparent;
     border: 2px solid #fff;
     box-shadow: none;
+}
+
+/* Add fade-in transition for page load */
+body {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
 }
 
 @media screen and (max-width: 650px) {
